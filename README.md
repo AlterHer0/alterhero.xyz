@@ -1,0 +1,2 @@
+# alterhero.xyz
+Mint Page
