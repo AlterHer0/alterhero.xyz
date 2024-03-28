@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Orange Kid';
+   
+    src: url('../../font/OrangeKid-Regular.ttf') format('truetype');
+        
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  .containerWebPage {
+    display: grid; 
+    grid-auto-columns: 98vw; 
+    grid-template-rows: auto auto auto; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "page1Mobile"
+      "page2Mobile"
+      "page3Mobile"; 
+    justify-self: start; 
+    align-self: start; 
+    margin-right : 0 !important;
+    margin-left : 0 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right : 0 !important;
+  }
+
+  .page1Mobile{
+    justify-self: start; 
+    align-self: start; 
+    grid-area: page1Mobile; 
+  }
+  .page2Mobile{
+    justify-self: start; 
+    align-self: start; 
+    grid-area: page2Mobile; 
+  }
+  .page3Mobile{
+    justify-self: start; 
+    align-self: start; 
+    grid-area: page3Mobile; 
+  }
+  .page1Img {
+    height: auto;
+    width: 98vw;
+  }
+  .page2Img {
+    height: auto;
+    width: 98vw;
+  }
+  .page3Img {
+    height: auto;
+    width: 98vw;
+  }  
+  .waitingInfo{
+    justify-self: center; 
+    align-self: end; 
+  }  
+  .waitingImg{
+    height: auto;
+    width: 20vw;
+  }  
+  .mailMobile{
+    justify-self: center; 
+    align-self: start; 
+    margin-top: 3vw;
+    margin-left: 30vw;
+  }  
+  .twitterMobile{
+    justify-self: center; 
+    align-self: start; 
+    margin-top: 3vw;
+    margin-right: 30vw;
+  }      
+  .socialMobile{
+    height: auto;
+    width: 6vw;
+  } 
+  .animMobileGif{
+    justify-self: center; 
+    align-self: end; 
+  }    
+  .animMobileInfo{
+    height: auto;
+    width: 63vw;
+  } 

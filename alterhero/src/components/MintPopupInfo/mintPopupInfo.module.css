@@ -1,0 +1,86 @@
+.MintWindow {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.5fr 0.1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "MintInfo"
+      "PopuMessage"; 
+    justify-self: center; 
+    align-self: center;
+    margin-top: 5%;
+    grid-area: NumaWindow; 
+  }
+  .MintInfo{
+  justify-self: center; 
+  align-self: center; 
+  grid-template-columns: 17vw; 
+  margin-top: 5vw;
+  grid-area: MintInfo; 
+  }
+  .mintAction{
+    display: grid;
+    grid-template-columns: 1fr 3vw 1fr; 
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "moins value plus";
+    justify-self: start; 
+    align-self: start;
+    gap: 0px 0px; 
+    padding-right : 0 !important;
+    padding-left : 0 !important;
+    margin-top: 23%;
+    margin-left: 28%;
+  }
+  .addTokenButt {
+    height: auto;
+    width: 2.5vw; 
+    justify-self: end; 
+    align-self: center; 
+    grid-area: plus; 
+  }
+  .remTokenButt {
+    height: auto;
+    width: 2.5vw; 
+    justify-self: start; 
+    align-self: center; 
+    grid-area: moins; 
+  }
+  .mintNumberQt{
+    width: 3vw;
+    height: 1.5vw;
+    padding: 0px;
+    line-height:1.38vw;
+    text-align: center;
+    font-family: 'Orange Kid', cursive;
+    font-size: 2vw;
+    justify-self: center; 
+    align-self: center; 
+    background-color: rgb(255, 255, 255);
+    grid-area: value; 
+  }
+  .mint-button{
+    height: auto;
+    width: 50%; 
+  }
+  .mintAction2{
+    justify-self: start; 
+    align-self: start;
+    margin-top: 21%;
+    margin-left: 61%;
+  }
+  .MessageBanner{
+    justify-self: center; 
+    align-self: end;
+    margin-bottom: 7%;
+  }
+  
+  .MessageBannerText{
+    text-align: center;
+    font-family: 'Orange Kid', cursive;
+    font-size: 1.6vw;
+  }
+  .mintBackImg{
+    height: 15vw;
+    width: 39vw; 
+  }

@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
+@font-face {
+  font-family: 'Orange Kid';
+  
+  src: url('../font/OrangeKid-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  
+}
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: 'Orange Kid';
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+
+.container {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+
+ 
+  
+}
+/* Other Web compatibility */
+
+
+.WelcomeImg { 
+  width: auto;
+  height: 65vw;
+  justify-self: center; 
+  align-self: center;
+}
+.back1LayoutImg {
+  height: auto;
+  width: 90vw;
+}
+
+.Social-Link { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ";  
+  justify-self: center; 
+  align-self: end;
+}
+.SocialLinkTwitt { 
+  justify-self: left; 
+  align-self: end;
+  margin-left: 44vw;
+  margin-bottom: 3vw;
+}
+.SocialLinkMail { 
+  justify-self: right; 
+  align-self: end;
+  margin-right: 44vw;
+  margin-bottom: 3vw;
+}
+.SocialImg {
+  width: auto;
+  height: 1.7vw;
+}
+.CoockieBanner {  
+  justify-self: right; 
+  align-self: end;
+  margin-right: 44vw;
+  margin-bottom: 3vw;
+}
+
+.ConnectButton{  
+  justify-self: right; 
+  align-self: end;
+  margin-bottom: 7.6%;
+  margin-right: 11%;
+}
+.ConnectImg{  
+  justify-self: right; 
+  align-self: end;
+  margin-bottom: 0.5%;
+  margin-right: 6%;
+}
+.connectInfoImg {
+  height: auto;
+  width: 15vw;
+}
+.CoockieInfo{
+  color: rgb(203, 173, 102);
+}
+.connect-button {
+  width: 5vw;
+  height: 1.8vw;
+  margin-bottom: 0.1vw;
+  color: rgb(7, 7, 7);
+  background: transparent;  
+  cursor: pointer;
+}
+.connect-wallet-button {
+  border: 1vw;
+  border-color: black;
+  border-radius: 0.5vw;
+  background-image: url("data:image/png;base64,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)");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.connected-wallet-button {
+  border-radius:50%;
+  padding: 0px;
+  line-height:15px;
+  font-size: 1.9vw;
+  text-align: center;
+  font-family: 'Orange Kid', cursive;
+  border: 1vw;
+  border-color: black;
+  border-radius: 0.5vw;
+  margin-right: 1.3vw;
+  margin-bottom: 2%;
+}
+.MintPage {
+  justify-self: center; 
+  align-self: center;
+  grid-area: MintPage; 
+}
+.MintImg {
+  height: auto;
+  width: 99vw;
+}
+.MintButton {
+  justify-self: start; 
+  align-self: start;
+  margin-bottom: 50%;
+  margin-right: 55%;
+}
+.ButtImg {
+  height: auto;
+  width: 13vw;
+}
+.MintButtonTextInfo{
+  text-align: center;
+  font-family: 'Orange Kid', cursive;
+  font-size: 2.5vw;
+}
+.MintComp {
+  justify-self: start; 
+  align-self: start;
+  margin-bottom: 50%;
+  margin-left: 55%;
+}
+.CompImg {
+  height: auto;
+  width: 13vw;
+}
+.mintNumberText{
+  text-align: center;
+  font-family: 'Orange Kid', cursive;
+  font-size: 2.5vw;
+  margin-bottom: 1%; 
+  cursor: default;
+}
+.MintButtonText{
+  justify-self: center; 
+  align-self: end;
+  margin-bottom: 51.3%;
+  margin-right: 55%;
+  cursor: pointer;
+}
+.Story {
+  justify-self: center; 
+  align-self: center;
+  grid-area: Story; 
+}
+.StoryImg {
+  height: auto;
+  width: 99vw;
+}
+.MintAnimImg{
+  height: auto;
+  width: 42vw;
+}
+.MintAnimInfo{
+  justify-self: center; 
+  align-self: start; 
+  margin-top: -2.5%;
+} 
+.mintAction{
+  display: grid;
+  grid-template-columns: 1fr 3vw 1fr; 
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "moins value plus";
+  justify-self: start; 
+  align-self: start;
+  gap: 0px 0px; 
+  padding-right : 0 !important;
+  padding-left : 0 !important;
+}
+.MintActivity{
+  justify-self: center; 
+  align-self: top;
+  height: 20%;
+  width: 40%; 
+  margin-bottom: 60%;
+}
+.mintBackground{
+  justify-self: center; 
+  align-self: top;
+  margin-top: 3%;
+}
+.Reserved {
+  justify-self: center; 
+  align-self: center;
+  grid-area: Reserved; 
+}
+.AlterHero{
+  height: auto;
+  width: 99vw; 
+}
+
+.web3modal-modal-card{
+  width: 400px!important;
+  min-width: unset!important;
+  max-width: unset!important;
+}
+
+.web3modal-provider-container{
+  flex-direction: column!important;
+}
+
+
+
+

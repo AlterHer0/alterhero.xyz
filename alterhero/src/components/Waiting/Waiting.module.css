@@ -1,0 +1,36 @@
+.containerWait {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100vh; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "WaitingGif"; 
+    margin-right : 0 !important;
+    margin-left : 0 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right : 0 !important;
+    padding-left : 0 !important;
+    cursor: wait;
+  }
+  .WaitingGif {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100%; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "WaitingAnime"; 
+    grid-area: WaitingGif; 
+  }
+  .WaitingAnime {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: WaitingAnime; 
+  }
+  
+  .GifAnim { 
+    height: auto;
+    width: 12vw;
+  }
